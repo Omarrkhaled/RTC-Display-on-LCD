@@ -1,4 +1,4 @@
-# Real time clock Display-on-LCD
+# Real time clock display on LCD
 Displaying real time clock and date on an LCD
 
 ## Used hardware componenets
