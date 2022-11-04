@@ -14,6 +14,7 @@ Displaying real time clock and date on an LCD
 ## Workflow for RTOS based implementation
 - User enters the desired command from a list of options via a serial communication UART terminal.
 - All tasks block initially, the command processing task waits for the user's command input and inserts it in a data queue then wakes up the task responsible for the specified application whether it's configuring date or time, LED effects, or displaying the time and date on an LCD.
+- A FreeRTOS software timer is configured to tick every 1 second for displaying the time and date of the LCD.
 - In this implementation the on-chip RTC peripheral is used not the ds1307 module.
  
 ## Notes
